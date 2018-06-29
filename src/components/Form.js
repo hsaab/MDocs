@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
 import '../style/Form.css';
 
 class Form extends Component {
@@ -58,13 +57,5 @@ handleSubmit(e) {
     );
   }
 }
-
-/*<RaisedButton
-  style={{width: '400px', position: 'relative', top: '25px', fontFamily: 'Fira Sans Condensed'}}
-  buttonStyle={{backgroundColor: '#a8afb8'}}
-  labelStyle={{fontWeight: 'bold', fontColor: '#a8afb8'}}
-  label="Submit"
-  onClick={(e) => this.handleSubmit(e)}
-/>*/
 
 export default Form;
