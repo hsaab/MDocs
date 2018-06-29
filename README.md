@@ -16,7 +16,7 @@ When users first start the app, they are directed to the home screen with option
 
 # Creating New Docs
 
-Upon logging in, the user has the ability to create new documents which persist in the MondoDB. Upon creating a document, we can edit the document, as well as add custom styling courtesy of [Draft.js](https://draftjs.org/).
+Upon logging in, the user has the ability to create new documents which persist in MondoDB. Upon creating a document, we can edit the document, as well as add custom styling courtesy of [Draft.js](https://draftjs.org/).
 
 <img height=300 src="/screenshots/Welcome.png"/>
 <img height=300 src="/screenshots/Login.png"/>
@@ -25,7 +25,7 @@ Upon logging in, the user has the ability to create new documents which persist 
 
 In order to share docs, one user needs to send the other user the unique document ID, which is located in the top left corner.
 
-<img height=300 src="/screenshots/Share.png"/>
+<img height=300 src="/screenshots/Share1.png"/>
 
 The second user will input the document ID on the main portal page and press submit.
 
