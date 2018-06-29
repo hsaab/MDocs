@@ -180,7 +180,7 @@ class DocumentEach extends Component {
               <Editor editorState={this.state.editorState} onChange={this.onChange}/>
             </div>
             <div className="each-submit">
-              <RaisedButton labelStyle={{color: 'white'}} style={{position: 'relative', top: '13px', width: '1279px'}} label='Save Changes' onClick={(e) => this.handleSubmit(e)}/>
+              <RaisedButton labelStyle={{color: 'white'}} style={{position: 'relative', top: '13px', width: '1200px'}} label='Save Changes' onClick={(e) => this.handleSubmit(e)}/>
             </div>
           </div>
 
