@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Form from '../components/Form.js';

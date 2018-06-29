@@ -77,7 +77,6 @@ class DocumentMain extends Component {
       {withCredentials: true}
     )
       .then((res) => {
-        const newDocList = this.state.docs;
         this.setState({
           docs: this.state.docs.concat(res.data.message)
         })

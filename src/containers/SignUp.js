@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Redirect from 'react-router-dom'
 import Form from '../components/Form.js';
 import '../style/SignUp.css';
 const dbUrl = "http://localhost:3000";
@@ -20,7 +19,6 @@ class SignUp extends Component {
     })
       .then((res) => {
         console.log('Sign up successful!')
-        console.log(this.context.router);
         this.context.router.history.replace('/login')
       })
 }

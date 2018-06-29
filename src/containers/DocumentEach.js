@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import axios from 'axios';
-import draftjs from 'draft-js';
-import {Editor, EditorState, RichUtils, convertToRaw, convertFromRaw} from 'draft-js';
-import debounce from 'lodash/debounce';
+import { Editor, EditorState, RichUtils, convertToRaw, convertFromRaw } from 'draft-js';
 import '../style/DocumentEach.css';
 const io = require('socket.io-client')
 const socket = io('localhost:3000');
@@ -103,7 +100,6 @@ class DocumentEach extends Component {
       editorState
     });
     const content = editorState.getCurrentContent();
-    const selection = editorState.getSelection();
     const contentJson = JSON.stringify({content: convertToRaw(content)})
     socket.emit('send', contentJson)
   }

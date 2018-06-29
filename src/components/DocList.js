@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import {List, ListItem, Paper} from 'material-ui/List';
-import ContentInbox from 'material-ui/svg-icons/content/inbox';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import ActionGrade from 'material-ui/svg-icons/action/grade';
+import { List, ListItem } from 'material-ui/List';
 import ContentSend from 'material-ui/svg-icons/content/send';
-import ContentDrafts from 'material-ui/svg-icons/content/drafts';
 import Divider from 'material-ui/Divider';
 
-var array = [0,1,2,3,4,5,6,7,8,9,10]
-
 class DocList extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   docClick(e, id) {
     e.preventDefault();
@@ -20,7 +11,7 @@ class DocList extends Component {
   }
 
   render() {
-    const docs = this.props.docs
+    const docs = this.props.docs;
     return(
         <List style={{width: '99%', overflow: 'auto'}}>
           {docs.map((doc, index) => {

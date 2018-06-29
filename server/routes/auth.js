@@ -34,7 +34,6 @@ function validateLoginForm(payload) {
   const errors = {};
   let isFormValid = true;
   let message = '';
-  console.log('THIS IS THE PAYLOAD', payload)
   if (!payload || typeof payload.username !== 'string' || payload.username.trim().length === 0) {
     isFormValid = false;
     errors.username = 'Please provide your username.';
@@ -57,7 +56,6 @@ function validateLoginForm(payload) {
 }
 
 router.post('/auth/signup', (req, res, next) => {
-  // res.send('HELLO');
   const validationResult = validateSignupForm(req.body);
   if (!validationResult.success) {
     return res.status(400).json({
@@ -108,7 +106,6 @@ router.post('/auth/login', (req, res, next) => {
 
   return passport.authenticate('local-login', (err, userData) => {
     if (err) {
-      console.log(err, 'Error right away')
       if (err.name === 'IncorrectCredentialsError') {
         return res.status(400).json({
           success: false,
