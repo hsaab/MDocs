@@ -9,17 +9,18 @@ App can be viewed by using [electron](https://electronjs.org/). To start the app
 
 # Sign Up & Login
 
-When users first start the app, they are directed to the home screen with optionality to sign up or log in. Upon hitting "Sign Up", new user can enter desired username and password. Then, the user is redirected to login on the login page. Using Passport authentication, the user can login!
+When users first start the app, they are directed to the home screen with optionality to sign up or log in. Upon hitting "Sign Up", new user can enter desired username and password. Then, the user is redirected to login on the login page. Using Passport authentication, the user can login and access the main portal!
 
 <img height=300 src="/screenshots/Welcome.png"/>
 <img height=300 src="/screenshots/Login.png"/>
+<img height=300 src="/screenshots/DocMain.png"/>
 
 # Creating New Docs
 
 Upon logging in, the user has the ability to create new documents which persist in MondoDB. Upon creating a document, we can edit the document, as well as add custom styling courtesy of [Draft.js](https://draftjs.org/).
 
-<img height=300 src="/screenshots/Welcome.png"/>
-<img height=300 src="/screenshots/Login.png"/>
+<img height=300 src="/screenshots/DocMain2.png"/>
+<img height=300 src="/screenshots/DocEach.png"/>
 
 # Sharing Docs
 
