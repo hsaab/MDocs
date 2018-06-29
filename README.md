@@ -20,7 +20,7 @@ When users first start the app, they are directed to the home screen with option
 Upon logging in, the user has the ability to create new documents which persist in MondoDB. Upon creating a document, we can edit the document, as well as add custom styling courtesy of [Draft.js](https://draftjs.org/).
 
 <img height=300 src="/screenshots/DocMain2.png"/>
-<img height=300 src="/screenshots/DocEach.png"/>
+<img height=300 src="/screenshots/DocEach1.png"/>
 
 # Sharing Docs
 
