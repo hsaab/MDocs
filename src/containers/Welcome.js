@@ -28,7 +28,7 @@ class Welcome extends Component {
             <span className="square"><Link className={["sixth before after", "link"].join(' ')} to="/login">Login</Link></span>
             <span className="square"><Link className={["sixth before after", "link"].join(' ')} to="/signup">Sign up</Link></span>
           </div>
-          <h1 className="app-title">Welcome to Text Editor</h1>
+          <h1 className="app-title">Welcome to Magic Docs</h1>
       </div>
     );
   }
